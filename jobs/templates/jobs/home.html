@@ -29,7 +29,7 @@
 <body>
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Harjeevan Singh</a>
+        <a class="navbar-brand" href="{% url 'home' %}">Harjeevan Singh</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
             <div class="navbar-nav ml-auto">
                 <a class="nav-item nav-link" href="https://www.linkedin.com/in/harjeevansingh/">LinkedIn </a>
                 <a class="nav-item nav-link" href="{% static 'resume.pdf' %}">Resume</a>
-                <a class="nav-item nav-link" href="#">Blog</a>
+                <a class="nav-item nav-link" href="{% url 'allblogs' %}">Blog</a>
             </div>
         </div>
     </nav>
@@ -54,7 +54,7 @@
             <p>
                 <a href="#" class="btn btn-primary my-2">Email Me</a>
             </p>
-            <img src="{% static 'photo.jpg' %}" height="300" />
+            <img src="{% static 'photo.jpg' %}" height="400" />
         </div>
     </section>
 
